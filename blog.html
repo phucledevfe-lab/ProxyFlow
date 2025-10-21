@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/blog.css" />
+    <link href="https://fonts.cdnfonts.com/css/geist" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="wrapper">
+        <div class="header">
+          <div class="header-left">
+            <a href="" class="header-logo">
+              <img
+                class="header-logo-img"
+                src="./images/proxyflow-logo.png"
+                alt="Logo"
+              />
+            </a>
+            <div class="header-logo-name">ProxyFlow</div>
+          </div>
+          <div class="header-menu">
+            <nav>
+              <ul>
+                <li><a href="#">proxy</a></li>
+                <li><a href="#">solutions</a></li>
+                <li><a href="#">guides</a></li>
+                <li><a href="#">blog</a></li>
+                <li><a href="#">pricing</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header-right">
+            <a href="#" class="btn btn-sign-in">sign in</a>
+            <a href="#" class="btn btn-start-free">Start Free Trial</a>
+          </div>
+
+          <!-- Mobile Menu Icon -->
+          <div class="icon-menu-mobile" onclick="toggleMobileMenu()">
+            <i class="menu-icon fa-solid fa-bars"></i>
+            <i class="close-icon fa-solid fa-xmark"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Menu Sidebar -->
+      <div class="mobile-menu" id="mobileMenu">
+        <nav>
+          <ul>
+            <li><a href="#" onclick="closeMobileMenu()">proxy</a></li>
+            <li><a href="#" onclick="closeMobileMenu()">solutions</a></li>
+            <li><a href="#" onclick="closeMobileMenu()">guides</a></li>
+            <li><a href="#" onclick="closeMobileMenu()">blog</a></li>
+            <li><a href="#" onclick="closeMobileMenu()">pricing</a></li>
+          </ul>
+        </nav>
+        <div class="mobile-menu-buttons">
+          <a href="#" class="btn btn-sign-in">sign in</a>
+          <a href="#" class="btn btn-start-free">Start Free Trial</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main content -->
+    <main>
+      <div class="wrapper">
+        <nav class="breadcrumb">
+          <a href="/">Proxy</a> /
+          <span>Blog</span>
+        </nav>
+
+        <div class="content-header">
+          <div class="content-tiltle">Blog</div>
+          <p class="content-description">
+            Stay updated with the latest news, tutorials, and insights about
+            proxies, VPNs, and web scraping.
+          </p>
+        </div>
+
+        <div class="content-cate">
+          <div class="content-title">Categories:</div>
+          <div class="content-btn">
+            <button class="active btn-cate">all</button>
+            <button class="btn-cate">poxy new</button>
+            <button class="btn-cate">tutorials</button>
+            <button class="btn-cate">industry insights</button>
+            <button class="btn-cate">security</button>
+            <button class="btn-cate">VPN</button>
+          </div>
+
+          <div class="blog-grid">
+            <!-- Card 1 -->
+            <div class="blog-card">
+              <a href="">
+                <div class="blog-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1603985529862-9e12198c9a60?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dnBufGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=600"
+                    alt="background image blog"
+                  />
+                  <div class="tag-blog">VPN</div>
+                </div>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <span class="date"
+                      ><i class="icon fa-regular fa-calendar"></i>Jan 15,
+                      2025</span
+                    >
+                    <span class="read-time"
+                      ><i class="icon fa-regular fa-clock"></i>8 min read</span
+                    >
+                  </div>
+                  <h3 class="text-line-clamp blog-title">
+                    The Future of Residential Proxies in 2025
+                  </h3>
+                  <p class="text-line-clamp blog-description">
+                    Explore the latest trends and innovations shaping the
+                    residential proxy market in 2025 and beyond.
+                  </p>
+                  <div class="blog-footer">
+                    <span class="blog-author">By Sarah Johnson</span>
+                    <a href="#" class="read-more">Read more</a>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <!-- Card 1 -->
+            <div class="blog-card">
+              <a href="">
+                <div class="blog-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1603985529862-9e12198c9a60?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dnBufGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=600"
+                    alt="background image blog"
+                  />
+                  <div class="tag-blog">VPN</div>
+                </div>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <span class="date"
+                      ><i class="icon fa-regular fa-calendar"></i>Jan 15,
+                      2025</span
+                    >
+                    <span class="read-time"
+                      ><i class="icon fa-regular fa-clock"></i>8 min read</span
+                    >
+                  </div>
+                  <h3 class="text-line-clamp blog-title">
+                    The Future of Residential Proxies in 2025
+                  </h3>
+                  <p class="text-line-clamp blog-description">
+                    Explore the latest trends and innovations shaping the
+                    residential proxy market in 2025 and beyond.
+                  </p>
+                  <div class="blog-footer">
+                    <span class="blog-author">By Sarah Johnson</span>
+                    <a href="#" class="read-more">Read more</a>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <!-- Card 1 -->
+            <div class="blog-card">
+              <a href="">
+                <div class="blog-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1603985529862-9e12198c9a60?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dnBufGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=600"
+                    alt="background image blog"
+                  />
+                  <div class="tag-blog">VPN</div>
+                </div>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <span class="date"
+                      ><i class="icon fa-regular fa-calendar"></i>Jan 15,
+                      2025</span
+                    >
+                    <span class="read-time"
+                      ><i class="icon fa-regular fa-clock"></i>8 min read</span
+                    >
+                  </div>
+                  <h3 class="text-line-clamp blog-title">
+                    The Future of Residential Proxies in 2025
+                  </h3>
+                  <p class="text-line-clamp blog-description">
+                    Explore the latest trends and innovations shaping the
+                    residential proxy market in 2025 and beyond.
+                  </p>
+                  <div class="blog-footer">
+                    <span class="blog-author">By Sarah Johnson</span>
+                    <a href="#" class="read-more">Read more</a>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <!-- Card 1 -->
+            <div class="blog-card">
+              <a href="">
+                <div class="blog-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1603985529862-9e12198c9a60?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dnBufGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=600"
+                    alt="background image blog"
+                  />
+                  <div class="tag-blog">VPN</div>
+                </div>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <span class="date"
+                      ><i class="icon fa-regular fa-calendar"></i>Jan 15,
+                      2025</span
+                    >
+                    <span class="read-time"
+                      ><i class="icon fa-regular fa-clock"></i>8 min read</span
+                    >
+                  </div>
+                  <h3 class="text-line-clamp blog-title">
+                    The Future of Residential Proxies in 2025
+                  </h3>
+                  <p class="text-line-clamp blog-description">
+                    Explore the latest trends and innovations shaping the
+                    residential proxy market in 2025 and beyond.
+                  </p>
+                  <div class="blog-footer">
+                    <span class="blog-author">By Sarah Johnson</span>
+                    <a href="#" class="read-more">Read more</a>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <!-- Card 1 -->
+            <div class="blog-card">
+              <a href="">
+                <div class="blog-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1603985529862-9e12198c9a60?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dnBufGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=600"
+                    alt="background image blog"
+                  />
+                  <div class="tag-blog">VPN</div>
+                </div>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <span class="date"
+                      ><i class="icon fa-regular fa-calendar"></i>Jan 15,
+                      2025</span
+                    >
+                    <span class="read-time"
+                      ><i class="icon fa-regular fa-clock"></i>8 min read</span
+                    >
+                  </div>
+                  <h3 class="text-line-clamp blog-title">
+                    The Future of Residential Proxies in 2025
+                  </h3>
+                  <p class="text-line-clamp blog-description">
+                    Explore the latest trends and innovations shaping the
+                    residential proxy market in 2025 and beyond.
+                  </p>
+                  <div class="blog-footer">
+                    <span class="blog-author">By Sarah Johnson</span>
+                    <a href="#" class="read-more">Read more</a>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <!-- Card 1 -->
+            <div class="blog-card">
+              <a href="">
+                <div class="blog-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1603985529862-9e12198c9a60?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dnBufGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=600"
+                    alt="background image blog"
+                  />
+                  <div class="tag-blog">VPN</div>
+                </div>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <span class="date"
+                      ><i class="icon fa-regular fa-calendar"></i>Jan 15,
+                      2025</span
+                    >
+                    <span class="read-time"
+                      ><i class="icon fa-regular fa-clock"></i>8 min read</span
+                    >
+                  </div>
+                  <h3 class="text-line-clamp blog-title">
+                    The Future of Residential Proxies in 2025
+                  </h3>
+                  <p class="text-line-clamp blog-description">
+                    Explore the latest trends and innovations shaping the
+                    residential proxy market in 2025 and beyond.
+                  </p>
+                  <div class="blog-footer">
+                    <span class="blog-author">By Sarah Johnson</span>
+                    <a href="#" class="read-more">Read more</a>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <!-- Card 1 -->
+            <div class="blog-card">
+              <a href="">
+                <div class="blog-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1603985529862-9e12198c9a60?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dnBufGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=600"
+                    alt="background image blog"
+                  />
+                  <div class="tag-blog">VPN</div>
+                </div>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <span class="date"
+                      ><i class="icon fa-regular fa-calendar"></i>Jan 15,
+                      2025</span
+                    >
+                    <span class="read-time"
+                      ><i class="icon fa-regular fa-clock"></i>8 min read</span
+                    >
+                  </div>
+                  <h3 class="text-line-clamp blog-title">
+                    The Future of Residential Proxies in 2025
+                  </h3>
+                  <p class="text-line-clamp blog-description">
+                    Explore the latest trends and innovations shaping the
+                    residential proxy market in 2025 and beyond.
+                  </p>
+                  <div class="blog-footer">
+                    <span class="blog-author">By Sarah Johnson</span>
+                    <a href="#" class="read-more">Read more</a>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <!-- Card 1 -->
+            <div class="blog-card">
+              <a href="">
+                <div class="blog-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1603985529862-9e12198c9a60?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dnBufGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=600"
+                    alt="background image blog"
+                  />
+                  <div class="tag-blog">VPN</div>
+                </div>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <span class="date"
+                      ><i class="icon fa-regular fa-calendar"></i>Jan 15,
+                      2025</span
+                    >
+                    <span class="read-time"
+                      ><i class="icon fa-regular fa-clock"></i>8 min read</span
+                    >
+                  </div>
+                  <h3 class="text-line-clamp blog-title">
+                    The Future of Residential Proxies in 2025
+                  </h3>
+                  <p class="text-line-clamp blog-description">
+                    Explore the latest trends and innovations shaping the
+                    residential proxy market in 2025 and beyond.
+                  </p>
+                  <div class="blog-footer">
+                    <span class="blog-author">By Sarah Johnson</span>
+                    <a href="#" class="read-more">Read more</a>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <!-- Card 1 -->
+            <div class="blog-card">
+              <a href="">
+                <div class="blog-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1603985529862-9e12198c9a60?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dnBufGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=600"
+                    alt="background image blog"
+                  />
+                  <div class="tag-blog">VPN</div>
+                </div>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <span class="date"
+                      ><i class="icon fa-regular fa-calendar"></i>Jan 15,
+                      2025</span
+                    >
+                    <span class="read-time"
+                      ><i class="icon fa-regular fa-clock"></i>8 min read</span
+                    >
+                  </div>
+                  <h3 class="text-line-clamp blog-title">
+                    The Future of Residential Proxies in 2025
+                  </h3>
+                  <p class="text-line-clamp blog-description">
+                    Explore the latest trends and innovations shaping the
+                    residential proxy market in 2025 and beyond.
+                  </p>
+                  <div class="blog-footer">
+                    <span class="blog-author">By Sarah Johnson</span>
+                    <a href="#" class="read-more">Read more</a>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- Pagination -->
+          <div class="pagination">
+            <button class="prev"><span>Previous</span></button>
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <span class="dots">...</span>
+            <a href="#">12</a>
+            <button class="next"><span>Next</span></button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="wrapper">
+        <div class="footer-top">
+          <nav>
+            <h3>Product</h3>
+            <ul>
+              <li><a href="#">features</a></li>
+              <li><a href="#">pricing</a></li>
+              <li><a href="#">security</a></li>
+              <li><a href="#">roadmap</a></li>
+              <li><a href="#">changelog</a></li>
+            </ul>
+          </nav>
+          <nav>
+            <h3>Company</h3>
+            <ul>
+              <li><a href="#">about</a></li>
+              <li><a href="#">blog</a></li>
+              <li><a href="#">careers</a></li>
+              <li><a href="#">press</a></li>
+              <li><a href="#">partners</a></li>
+            </ul>
+          </nav>
+          <nav>
+            <h3>Resources</h3>
+            <ul>
+              <li><a href="#">documentation</a></li>
+              <li><a href="#">API reference</a></li>
+              <li><a href="#">guides</a></li>
+              <li><a href="#">community</a></li>
+              <li><a href="#">support</a></li>
+            </ul>
+          </nav>
+          <nav>
+            <h3>Legal</h3>
+            <ul>
+              <li><a href="#">privacy</a></li>
+              <li><a href="#">terms</a></li>
+              <li><a href="#">cookie policy</a></li>
+              <li><a href="#">licenses</a></li>
+              <li><a href="#">compliance </a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer-bottom">
+          <div class="logo-footer">
+            <a href="" class="footer-logo">
+              <img
+                class="footer-logo-img"
+                src="./images/proxyflow-logo.png"
+                alt="Logo"
+              />
+            </a>
+            <div class="footer-logo-name">ProxyFlow</div>
+          </div>
+          <div class="footer-copyright">
+            © 2025 TechFlow. All rights reserved.
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Nhúng file Script -->
+    <script src="./js/blog.js"></script>
+  </body>
+</html>
