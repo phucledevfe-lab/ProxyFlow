@@ -1,0 +1,109 @@
+<section class="main-content">
+  <div class="container">
+    <!-- LEFT: Table of Contents -->
+    <aside class="left-content">
+      <div class="toc">
+        <h3>Table of Contents</h3>
+        <ul>
+          <li><a href="#">What are Residential Proxies?</a></li>
+          <li><a href="#">How do Residential Proxies Work?</a></li>
+          <li><a href="#">Key Benefits</a></li>
+          <li><a href="#">Use Cases</a></li>
+          <li><a href="#">Drawbacks</a></li>
+          <li><a href="#">Best Practices</a></li>
+          <li><a href="#">Conclusion</a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- RIGHT: Article Content -->
+    <article class="right-content">
+      <!-- Breadcrumb -->
+      <div class="breadcrumb">
+        <a href="#">ProxyFlow</a> / <a href="#">Blog</a> /
+        <span>Understanding Residential Proxies: A Complete Guide</span>
+      </div>
+
+      <!-- Tag -->
+      <div class="article-tag">Proxy</div>
+
+      <!-- Title -->
+      <h1 class="article-title">
+        Understanding Residential Proxies: A Complete Guide
+      </h1>
+
+      <!-- Meta Info -->
+      <div class="meta">
+        <span class="author"><i class="fa-regular fa-user"></i> John Smith</span>
+        <span class="date"><i class="fa-regular fa-calendar"></i> March 18, 2025</span>
+        <span class="read-time"><i class="fa-regular fa-clock"></i> 8 min read</span>
+      </div>
+
+      <!-- Share -->
+      <div class="share-buttons">
+        <button><i class="fa-brands fa-facebook-f"></i></button>
+        <button><i class="fa-brands fa-twitter"></i></button>
+        <button><i class="fa-brands fa-linkedin-in"></i></button>
+      </div>
+
+      <!-- TOC toggle (for tablet/mobile) -->
+      <button class="toc-toggle">
+        <i class="fa-solid fa-list"></i> Show Table of Contents
+      </button>
+      <div class="toc-mobile">
+        <ul>
+          <li><a href="#">What are Residential Proxies?</a></li>
+          <li><a href="#">How do Residential Proxies Work?</a></li>
+          <li><a href="#">Key Benefits</a></li>
+          <li><a href="#">Use Cases</a></li>
+          <li><a href="#">Drawbacks</a></li>
+          <li><a href="#">Best Practices</a></li>
+          <li><a href="#">Conclusion</a></li>
+        </ul>
+      </div>
+
+      <!-- Image -->
+      <div class="article-image">
+        <img src="images/proxy-diagram.png" alt="Residential Proxy Diagram" />
+      </div>
+
+      <!-- Article Body -->
+      <div class="article-body">
+        <p>
+          Residential proxies are IP addresses provided by Internet Service Providers
+          (ISPs) to homeowners. Unlike datacenter proxies, residential proxies are
+          associated with actual physical locations, making them appear as legitimate
+          users to websites.
+        </p>
+        <h3>Key Benefits of Residential Proxies</h3>
+        <ul>
+          <li>Better anonymity and reduced block rates</li>
+          <li>Access geo-restricted content</li>
+          <li>More reliable scraping at scale</li>
+        </ul>
+      </div>
+
+      <!-- Back Button -->
+      <div class="back-btn">
+        <a href="#" class="btn-back"><i class="fa-solid fa-arrow-left"></i> Back to Blog</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- Font Awesome -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+
+<script>
+  // Toggle Table of Contents on mobile/tablet
+  const tocToggle = document.querySelector(".toc-toggle");
+  const tocMobile = document.querySelector(".toc-mobile");
+  if (tocToggle) {
+    tocToggle.addEventListener("click", () => {
+      tocMobile.classList.toggle("active");
+    });
+  }
+</script>
