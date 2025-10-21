@@ -57,8 +57,10 @@ header {
   width: 100%;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Đen nhạt, mỏng */
   position: fixed;
+  top: 0;
   background: #fff;
   z-index: 10;
+  padding: 10px 0;
 }
 
 .header {
@@ -83,21 +85,57 @@ img.header-logo-img {
   font-weight: 300;
 }
 
+.header-logo-name:hover {
+  color: #2456d3;
+  cursor: pointer;
+}
+
 .header-menu nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
   display: flex;
-  gap: 15px;
+  gap: 30px;
+}
+
+.header-menu nav ul li {
+  position: relative;
 }
 
 .header-menu nav ul li a {
-  font-size: 14px;
-  text-transform: capitalize;
-  font-weight: lighter;
+  text-decoration: none;
+  color: #333;
+  padding: 10px 0;
+  display: inline-block;
+  position: relative;
+}
+
+.header-menu nav ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #2456d3; /* Màu xanh, bạn có thể đổi màu khác */
+  transition: width 0.3s ease;
+}
+
+.header-menu nav ul li a:hover::after {
+  width: 100%;
 }
 
 a.btn.btn-sign-in {
   margin-right: 5px;
   font-size: 14px;
+  padding: 5px;
   text-transform: capitalize;
+}
+
+a.btn.btn-sign-in:hover {
+  background: linear-gradient(45deg, #2456d3, #0086c0);
+  border-radius: 10px;
+  color: white;
 }
 
 a.btn.btn-start-free {
@@ -200,7 +238,7 @@ a.btn.btn-start-free {
 }
 
 .icon-menu-mobile {
-    display: none;
+  display: none;
 }
 
 /* Tablet and Mobile Responsive */
